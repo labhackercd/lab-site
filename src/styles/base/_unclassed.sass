@@ -1,0 +1,31 @@
+::selection
+  background-color: $color-selection
+
+html
+  font-size: 16px
+  font-weight: 400
+  height: 100%
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+*:before
+*:after
+*
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+
+button
+  cursor: pointer
+
+* + *
+  margin-top: $space-centi
+  +media-mediumup
+    margin-top: $space-deci
+
+body,
+body > *
+  margin: 0
+
+body > main
+  overflow: hidden
