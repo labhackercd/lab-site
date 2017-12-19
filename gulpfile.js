@@ -85,20 +85,16 @@ gulp.task('setup-src', function() {
   });
 });
 
-gulp.task('default', function() {
-  console.log("Use 'gulp setup' command to initialize the project files");
-});
-
 gulp.task('setup', function() {
   gulp.start('styles', 'templates', 'scripts', 'images', 'setup-src');
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./src/styles/**/*', ['styles']);
-  gulp.watch(['./src/views/templates/**/*', './*.pug'], ['templates']);
+  gulp.watch('./src/styles/**/*.sass', ['styles']);
+  gulp.watch('./src/views/**/*.pug', ['templates']);
   gulp.watch('./src/js/*.js', ['scripts']);
   gulp.watch('./src/assets/images/**/*', ['images']);
-
+  
   browserSync.init({
     server: {
       proxy: "local.build",
@@ -108,3 +104,5 @@ gulp.task('watch', function() {
 
   gulp.watch(['./**'], browserSync.reload);
 });
+
+gulp.task('default', ['styles', 'templates', 'watch'] )
