@@ -1,6 +1,9 @@
 {
-  "name": "my-site",
+  "name": "lab-site",
   "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
   "dependencies": {
     "gulp": "^3.9.1"
   },
@@ -21,10 +24,8 @@
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/caepenna/my-site.git"
-  },
-  "author": "",
-  "license": "MIT"
+  "repository": "git+https://github.com/caepenna/my-site.git",
+  "author": "Lab Hacker",
+  "license": "MIT",
+  "version": "1.0.0"
 }
