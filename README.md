@@ -4,7 +4,7 @@
 
 Firstly, install *yarn*. You can learn how to do it [here](https://yarnpkg.com/lang/en/docs/install/).
 
-Now, initialize yarn.
+Now, initialize yarn inside the repository directory.
 
 ```bash
 $ yarn
