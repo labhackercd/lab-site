@@ -94,15 +94,18 @@ gulp.task('watch', function() {
   gulp.watch('./src/views/**/*.pug', ['templates']);
   gulp.watch('./src/js/*.js', ['scripts']);
   gulp.watch('./src/assets/images/**/*', ['images']);
-  
+});
+
+gulp.task('browsersync', function() {
   browserSync.init({
     server: {
       proxy: "local.build",
       baseDir: "./"
     }
   });
-
   gulp.watch(['./**'], browserSync.reload);
 });
 
 gulp.task('default', ['styles', 'templates', 'watch'] )
+
+gulp.task('serve', ['styles', 'templates', 'watch', 'browsersync'] )

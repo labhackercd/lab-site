@@ -2,7 +2,9 @@
   "name": "lab-site",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp"
+    "setup": "gulp setup",
+    "watch": "gulp watch",
+    "serve": "gulp serve"
   },
   "dependencies": {
     "gulp": "^3.9.1"
