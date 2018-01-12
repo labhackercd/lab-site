@@ -26,7 +26,7 @@
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8"
   },
-  "repository": "git+https://github.com/caepenna/my-site.git",
+  "repository": "git+https://github.com/labhacker/lab-site.git",
   "author": "Lab Hacker",
   "license": "MIT",
   "version": "1.0.0"

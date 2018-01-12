@@ -10,9 +10,7 @@ Now, initialize yarn inside the repository directory.
 $ yarn
 ```
 
-### Running Your Local Server With Gulp
-
-After the installation of all requirements and its dependencies, your local web development environment is ready to run. Setup your initial files with `yarn setup`. This command is only necessary the first time the project is set or if the build folder is deleted.
+After that you'll have installaled all requirements and its dependencies, your local web development environment is ready to run. Setup your files with `yarn setup`. This command is only necessary the first time the project is set or if the build folder is deleted.
 
 ```bash
 $ yarn setup
