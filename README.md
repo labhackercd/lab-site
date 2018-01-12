@@ -2,7 +2,9 @@
 
 ## Setup Instructions
 
-Initialize `yarn`
+Firstly, install *yarn*. You can learn how to do it [here](https://yarnpkg.com/lang/en/docs/install/).
+
+Now, initialize yarn.
 
 ```bash
 $ yarn
