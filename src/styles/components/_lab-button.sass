@@ -1,9 +1,13 @@
 .lab-button
-  padding: 1.4rem 2.9rem
-  color: #FFF
-  font-size: $font-size-deca
+  color: #fff
   font-weight: 500
-  transition: all .15s ease-in-out
+  transition: all 0.1s ease-in-out
+  font-size: $font-size-deci
+  padding: 1rem 2rem
+
+  +media-mediumup
+    font-size: $font-size-base
+    padding: 1.25rem 2.5rem
 
   &.-green
     background-color: $color-lab-green-light
@@ -17,10 +21,5 @@
     &:hover
       background-color: $color-lab-blue
 
-  &.-active
-    position: fixed
-    top: 0
-    left: 0
-    color: transparent
-    width: 100vw
-    min-height: 100vh
+  &:active
+    transform: translateY(2px)
