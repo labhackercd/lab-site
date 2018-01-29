@@ -1,16 +1,26 @@
 .simple-button
-  padding: 2rem 2.9rem
+  padding: 1.4rem 2.9rem
   color: #FFF
   font-size: $font-size-deca
   font-weight: 500
+  transition: all .15s ease-in-out
 
   &.-green
-    background-color: $color-lh-green
-    opacity: .7
+    background-color: $color-lh-green-light
 
-  &.-purple
-    background-color: $color-lh-blue
-    opacity: .7
+    &:hover
+      background-color: $color-lh-green
 
-  &:hover
-    opacity: 1
+  &.-blue
+    background-color: $color-lh-blue-light
+
+    &:hover
+      background-color: $color-lh-blue
+
+  &.-active
+    position: fixed
+    top: 0
+    left: 0
+    color: transparent
+    width: 100vw
+    min-height: 100vh
