@@ -2,3 +2,37 @@
   +container
   padding-top: 0
   padding-bottom: 0
+  display: flex
+  flex-direction: column
+  +media-mediumup
+    flex-direction: row
+    align-items: center
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-around
+
+  > * + *
+    margin-top: $space-deca
+    +media-mediumup
+      margin-top: $space-hecto
+
+  +media-mediumup
+    > .title-section
+      flex-basis: 100%
+
+  > .thingswedo
+    +media-mediumup
+      flex-basis: 40%
+
+    > p
+      // <p> has smaller-than-usual font-sizes/line-height due to volume of content
+      // Consider reducing the content and deleting the following lines
+      font-size: $font-size-centi
+      line-height: $line-height-centi
+      +media-mediumup
+        font-size: $font-size-deci
+        line-height: $line-height-deci
+
+      > a
+        color: $color-link
+        +hover-highlight(rgba($color-link, 0.2))
