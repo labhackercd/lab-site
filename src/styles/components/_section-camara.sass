@@ -1,2 +1,18 @@
 .section-camara
   +container
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  h2
+    width: 50vw
+    text-align: center
+    line-height: 1.45
+
+  .logo
+    width: 30vw
+    margin-top: $space-deca
+    transition: all .25s ease-in-out
+
+    &:hover
+      transform: scale(1.02)
