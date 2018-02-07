@@ -1,9 +1,20 @@
 .section-links
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  overflow: scroll
   +container
   padding: 0
   padding-top: 1rem
   background-color: $color-lab-blue-light
   color: #fff
+  transform: translateX(-100vw)
+  transition: translateX .25s ease-in-out
+
+  &.-active
+    transform: translateX(0)
 
   .close-modal
     padding-left: 9vw

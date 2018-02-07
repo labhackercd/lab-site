@@ -117,4 +117,4 @@ gulp.task('webserver', function() {
 
 gulp.task('default', ['styles', 'templates', 'watch'] )
 
-gulp.task('serve', ['styles', 'templates', 'scripts', 'webserver'] )
+gulp.task('serve', ['styles', 'templates', 'webserver'] )
