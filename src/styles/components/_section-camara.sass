@@ -9,10 +9,16 @@
     text-align: center
     line-height: 1.45
 
+    +media-smallonly
+      width: 80vw
+
   .logo
     width: 30vw
     margin-top: $space-deca
     transition: all .15s ease-in-out
+
+    +media-smallonly
+      width: 80vw
 
     &:hover
       transform: scale(1.02)

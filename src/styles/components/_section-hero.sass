@@ -1,7 +1,7 @@
 .section-hero
   +container
-  padding-top: 0
-  padding-bottom: 0
+  padding-top: 2rem
+  padding-bottom: 2rem
   background-color: #000
   height: 80vh
   display: flex
@@ -14,6 +14,9 @@
   background-repeat: no-repeat
   color: #FFF
   align-items: center
+  +media-smallonly
+    height: 100vh
+
   +media-mediumdown
     text-align: center
   +media-mediumup
