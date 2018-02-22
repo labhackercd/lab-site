@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="480px" height="300px" viewBox="0 0 480 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 16</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-16">
+            <rect id="Rectangle-5-Copy-3" fill="#FFFFFF" x="0" y="0" width="480" height="300"></rect>
+            <g id="Group-12" transform="translate(80.000000, 33.000000)">
+                <path d="M264,72.14 C264,93.462 254.728,112.617 240,125.8 L240,152.14 L320,152.14 L320,72.14 L264,72.14 Z" id="Fill-22" fill="#FFBBCC"></path>
+                <path d="M127.4902,104.14 L80.0002,104.14 L80.0002,128.14 L64.0002,128.14 L64.0002,232.14 L192.0002,232.14 L192.0002,144.14 C163.7312,144.14 139.2722,127.846 127.4902,104.14" id="Fill-24" fill="#66CC99"></path>
+                <polygon id="Fill-26" fill="#FFCC99" points="80 104.14 80 48.14 0 48.14 0 128.14 64 128.14 64 104.14"></polygon>
+                <polygon id="Fill-28" fill="#9999FF" points="64 128.14 80 128.14 80 104.14 64 104.14"></polygon>
+                <path d="M264,72.14 C264,32.375 231.765,0.14 192,0.14 C152.235,0.14 120,32.375 120,72.14 C120,83.636 122.699,94.499 127.49,104.14 L192,104.14 L192,144.14 C210.442,144.14 227.262,137.203 240,125.8 L240,72.14 L264,72.14 Z" id="Fill-30" fill="#FFDD66"></path>
+                <path d="M264,72.14 L240,72.14 L240,125.8 C254.728,112.617 264,93.462 264,72.14" id="Fill-31" fill="#9999FF"></path>
+                <path d="M127.4902,104.14 C139.2722,127.846 163.7312,144.14 192.0002,144.14 L192.0002,104.14 L127.4902,104.14 Z" id="Fill-32" fill="#FFBBCC"></path>
+            </g>
+        </g>
+    </g>
+</svg>

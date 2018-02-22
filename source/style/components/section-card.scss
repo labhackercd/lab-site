@@ -1,0 +1,62 @@
+.section-card {
+  @include container;
+  background-color: $color-lab-green-dark;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  column-count: 3;
+  column-gap: 1.5rem;
+
+  @include media-smallonly {
+    column-count: 1;
+    column-gap: 0;
+    padding-bottom: 4rem;
+  }
+
+  > .item {
+    padding-top: 1rem;
+    break-inside: avoid-column;
+    margin-bottom: .5rem;
+
+    > .card {
+      position: relative;
+      background-color: #FFF;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      padding-top: 7rem;
+      box-sizing: border-box;
+
+      @include media-smallonly {
+        margin-bottom: 2.5rem;
+      }
+
+      > .avatar {
+        position: absolute;
+        top: -1rem;
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+      }
+
+      > .name {
+        font-size: 1.5rem;
+        color: $color-lab-green;
+        margin-top: 1rem;
+      }
+
+      > .position {
+        opacity: .3;
+        margin-top: 0;
+      }
+
+      > p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-top: 0;
+      }
+    }
+  }
+}

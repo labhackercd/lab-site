@@ -1,0 +1,32 @@
+.section-contact {
+  padding-left: 24vw;
+  padding-right: 24vw;
+  background-color: #000;
+  color: #fff;
+
+  > p {
+    margin-bottom: $space-centi;
+  }
+
+  @include media-smallonly {
+    padding-left: 9vw;
+    padding-right: 9vw;
+  }
+
+  > form {
+    display: flex;
+    flex-direction: column;
+
+    > * + * {
+      margin-top: $space-centi;
+
+      @include media-mediumup {
+        margin-top: $space-deci;
+      }
+    }
+
+    > a {
+      align-self: flex-end;
+    }
+  }
+}

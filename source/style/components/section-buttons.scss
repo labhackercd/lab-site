@@ -1,0 +1,26 @@
+.section-buttons {
+  @include container;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @include media-smallup {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  > * {
+    margin-top: 0;
+  }
+
+  > * + * {
+    @include media-smallup {
+      margin-left: $space-deca;
+    }
+
+    @include media-smallonly {
+      margin-top: $space-base;
+    }
+  }
+}
