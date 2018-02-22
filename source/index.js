@@ -1,5 +1,4 @@
 import './style/style.scss';
-import './style/style.css';
 
 // modal
 

@@ -11,7 +11,7 @@
   background-color: $color-lab-blue-light;
   color: #fff;
   transform: translateX(100vw);
-  transition: all .25s ease-in-out;
+  transition: all .35s ease-in-out;
 
   &.-active {
     transform: translateX(0);

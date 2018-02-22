@@ -11,7 +11,7 @@
   background-color: $color-lab-green-light;
   color: #fff;
   transform: translateX(-100vw);
-  transition: all .25s ease-in-out;
+  transition: all .35s ease-in-out;
 
   &.-active {
     transform: translateX(0);
@@ -48,7 +48,6 @@
   > main {
     padding: 4.5rem 25vw;
     background-color: $color-lab-green-dark;
-    width: 100%;
 
     @include media-smallonly {
       padding: 2.5rem 9vw;
@@ -68,6 +67,8 @@
     }
 
     > .video {
+      width: 100%;
+      height: 445px;
       margin-top: 4rem;
 
       @include media-smallonly {
