@@ -47,8 +47,8 @@
 
   > main {
     padding: 4.5rem 8vw;
+    box-sizing: border-box;
     background-color: $color-lab-blue-dark;
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -57,17 +57,21 @@
       padding: 2.5rem 9vw;
     }
 
-    > form {
+    form {
       display: flex;
       flex-direction: column;
 
-      > a {
+      > * + * {
+        margin-top: 2rem;
+      }
+
+      a {
         align-self: flex-end;
       }
     }
 
     > .item {
-      width: 32%;
+      width: 30%;
       padding-left: 1vw;
       padding-right: 1vw;
 
@@ -102,6 +106,12 @@
       > .list {
         display: flex;
         flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        > * + * {
+          margin-top: 1rem;
+        }
 
         > a {
           text-decoration: underline;
