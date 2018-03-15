@@ -10,8 +10,8 @@
   padding-top: 1rem;
   background-color: $color-lab-blue-light;
   color: #fff;
-  transform: translateX(100vw);
-  transition: all .35s ease-in-out;
+  transform: translateX(150vw);
+  transition: all .5s ease-in-out;
 
   &.-active {
     transform: translateX(0);
@@ -86,8 +86,8 @@
         display: block;
         width: 100%;
         font-size: 1.5rem;
-        color: rgba(#000, .3);
-        border-bottom: 2px solid rgba(#000, .3);
+        color: rgba(#FFF, .8);
+        border-bottom: 2px solid rgba(#fff, .8);
       }
 
       > .description {

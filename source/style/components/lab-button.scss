@@ -26,6 +26,14 @@
     }
   }
 
+  &.-pink {
+    background-color: $color-lab-pink-light;
+
+    &:hover {
+      background-color: $color-lab-pink;
+    }
+  }
+
   &:active {
     transform: translateY(2px);
   }
