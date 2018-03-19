@@ -2,73 +2,81 @@
   @include container;
   background-color: $color-lab-green-dark;
   padding-top: 2rem;
-  padding-bottom: 8rem;
-  column-count: 3;
-  column-gap: 1.5rem;
 
-  @include media-mediumonly {
-    column-count: 2;
+  > .cards {
+    padding-bottom: 8rem;
+    column-count: 3;
     column-gap: 1.5rem;
-    padding-bottom: 4rem;
-  }
 
-  @include media-smallonly {
-    column-count: 1;
-    column-gap: 0;
-    padding-bottom: 4rem;
-  }
+    @include media-mediumonly {
+      column-count: 2;
+      column-gap: 1.5rem;
+      padding-bottom: 4rem;
+    }
 
-  > .item {
-    padding-top: 1rem;
-    break-inside: avoid-column;
-    margin-bottom: .5rem;
+    @include media-smallonly {
+      column-count: 1;
+      column-gap: 0;
+      padding-bottom: 4rem;
+    }
 
-    > .card {
-      position: relative;
-      background-color: #FFF;
-      color: #000;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 7rem;
-      padding-bottom: 2rem;
-      box-sizing: border-box;
+    > .item {
+      padding-top: 1rem;
+      break-inside: avoid-column;
+      margin-bottom: .5rem;
 
-      @include media-smallonly {
-        margin-bottom: 2.5rem;
-      }
+      > .card {
+        position: relative;
+        background-color: #FFF;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 7rem;
+        padding-bottom: 2rem;
+        box-sizing: border-box;
 
-      > .avatar {
-        position: absolute;
-        top: -1rem;
-        width: 8rem;
-        height: 8rem;
-        border-radius: 50%;
-      }
+        @include media-smallonly {
+          margin-bottom: 2.5rem;
+        }
 
-      > .name,
-      > .position,
-      > p {
-        padding-left: 2rem;
-        padding-right: 2rem;
-      }
+        > .avatar {
+          position: absolute;
+          top: -1rem;
+          width: 8rem;
+          height: 8rem;
+          border-radius: 50%;
+        }
 
-      > .name {
-        font-size: 1.5rem;
-        color: $color-lab-green;
-        margin-top: 1rem;
-      }
+        > .name,
+        > .position,
+        > p {
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
 
-      > .position {
-        opacity: .3;
-        margin-top: 0;
-      }
+        > .name {
+          font-size: 1.5rem;
+          color: $color-lab-green;
+          margin-top: 1rem;
+          text-align: center;
+          line-height: 1.2;
+        }
 
-      > p {
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-top: 0;
+        > .position {
+          opacity: .3;
+          margin-top: 0;
+          line-height: 1.2;
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+
+        > p {
+          font-size: 1rem;
+          line-height: 1.5;
+          margin-top: 0;
+        }
       }
     }
   }

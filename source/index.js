@@ -4,7 +4,7 @@ import './style/style.scss';
 
 const greenButtons = document.querySelectorAll('.lab-button.-green');
 const blueButtons = document.querySelectorAll('.lab-button.-blue');
-const pinkButtons = document.querySelectorAll('.lab-button.-pink');
+const orangeButtons = document.querySelectorAll('.lab-button.-orange');
 const sectionAbout = document.querySelector('.section-about');
 const sectionLinks = document.querySelector('.section-links');
 const sectionActivities = document.querySelector('.section-activities');
@@ -25,8 +25,8 @@ blueButtons.forEach(function(blueButton) {
   }
 })
 
-pinkButtons.forEach(function(pinkButton) {
-  pinkButton.onclick = function() {
+orangeButtons.forEach(function(orangeButton) {
+  orangeButton.onclick = function() {
     sectionActivities.classList.add('-active');
     noScroll.classList.add('-noscroll');
   }
