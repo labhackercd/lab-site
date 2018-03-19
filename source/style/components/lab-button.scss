@@ -11,26 +11,26 @@
   }
 
   &.-green {
-    background-color: $color-lab-green-light;
+    background-color: $color-lab-green;
 
     &:hover {
-      background-color: $color-lab-green;
+      background-color: $color-lab-green-dark;
     }
   }
 
   &.-blue {
-    background-color: $color-lab-blue-light;
+    background-color: $color-lab-blue;
 
     &:hover {
-      background-color: $color-lab-blue;
+      background-color: $color-lab-blue-dark;
     }
   }
 
   &.-orange {
-    background-color: $color-lab-orange-light;
+    background-color: $color-lab-orange;
 
     &:hover {
-      background-color: $color-lab-orange;
+      background-color: $color-lab-orange-dark;
     }
   }
 

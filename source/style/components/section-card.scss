@@ -47,6 +47,7 @@
           width: 8rem;
           height: 8rem;
           border-radius: 50%;
+          object-fit: cover;
         }
 
         > .name,
@@ -58,7 +59,7 @@
 
         > .name {
           font-size: 1.5rem;
-          color: $color-lab-green;
+          color: $color-lab-green-dark;
           margin-top: 1rem;
           text-align: center;
           line-height: 1.2;
