@@ -69,11 +69,7 @@
       }
 
       &.-large {
-        width: 64%;
-
-        @include media-smallonly {
-          width: 100%;
-        }
+        width: 100%;
 
         > a {
           text-decoration: underline;
