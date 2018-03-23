@@ -17,6 +17,7 @@
 
   @include media-smallonly {
     height: 100vh;
+    text-align: center;
   }
 
   @include media-mediumdown {
@@ -42,9 +43,15 @@
   }
 
   > .content {
+    width: 100%;
     max-width: 960px;
+    position: relative;
 
-    > h1 {
+    > .section-carousel {
+      width: 100%;
+    }
+
+    h1 {
       text-shadow: 0 1rem 3rem rgba(#000, 0.1);
       font-size: 2.8rem;
       line-height: 2.6rem;

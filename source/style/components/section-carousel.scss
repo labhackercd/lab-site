@@ -1,0 +1,68 @@
+.section-carousel {
+  position: relative;
+  min-height: 20vh;
+
+  > .list {
+    position: absolute;
+    width: 80%;
+
+    @include media-mediumdown {
+      width: 100%;
+    }
+
+    > .item {
+      position: absolute;
+      transform: translateY(6rem);
+      margin: 0;
+      opacity: 0;
+      transition: all .4s ease-out;
+
+      &.-active {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+
+  > .controls {
+    position: relative;
+    top: 8rem;
+    display: flex;
+
+    @include media-mediumdown {
+      display: none;
+    }
+
+    > * + * {
+      margin-left: 1.5rem;
+    }
+
+    > .option {
+      width: 1.25rem;
+      height: 1.25rem;
+      background-color: #FFF;
+      cursor: pointer;
+
+      &.-active {
+        background-color: $color-lab-orange;
+      }
+
+      &.-diamond {
+        transform: rotate(315deg) translateY(1rem);
+
+        &.-active {
+          background-color: $color-lab-green;
+        }
+      }
+
+      &.-circle {
+        border-radius: 50%;
+        transform: translate(1rem, -0.5rem);
+
+        &.-active {
+          background-color: $color-lab-pink;
+        }
+      }
+    }
+  }
+}
