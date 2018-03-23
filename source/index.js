@@ -14,22 +14,25 @@ const carouselOptions = document.querySelectorAll('.section-carousel .option');
 
 greenButtons.forEach(function(greenButton) {
   greenButton.onclick = function() {
-    sectionAbout.classList.add('-active');
     noScroll.classList.add('-noscroll');
+    sectionAbout.classList.add('-active');
+    window.history.pushState({}, '', '/quem-somos')
   }
 })
 
 blueButtons.forEach(function(blueButton) {
   blueButton.onclick = function() {
-    sectionLinks.classList.add('-active');
     noScroll.classList.add('-noscroll');
+    sectionLinks.classList.add('-active');
+    window.history.pushState({}, '', '/nossas-atividades')
   }
 })
 
 orangeButtons.forEach(function(orangeButton) {
   orangeButton.onclick = function() {
-    sectionActivities.classList.add('-active');
     noScroll.classList.add('-noscroll');
+    sectionActivities.classList.add('-active');
+    window.history.pushState({}, '', '/nos-acompanhe')
   }
 })
 
@@ -39,6 +42,7 @@ closeModals.forEach(function(closeModal) {
     sectionLinks.classList.remove('-active');
     sectionActivities.classList.remove('-active');
     noScroll.classList.remove('-noscroll');
+    window.history.back();
   }
 })
 
