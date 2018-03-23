@@ -2,6 +2,10 @@
   position: relative;
   min-height: 20vh;
 
+  @include media-smallonly {
+    min-height: 40vh;
+  }
+
   > .list {
     position: absolute;
     width: 80%;
