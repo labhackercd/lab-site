@@ -71,6 +71,10 @@
         color: $color-link;
         @include hover-highlight(rgba($color-link, 0.2));
       }
+
+      > b {
+        font-weight: bold;
+      }
     }
   }
 }
