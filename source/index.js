@@ -55,6 +55,16 @@ window.onpopstate = function(event) {
   removeModal();
 };
 
+// Esc remove modal
+$(document).keyup(function(e) {
+   if (e.keyCode == 27) {
+     if (sectionAbout.hasClass('-active') || sectionLinks.hasClass('-active') || sectionActivities.hasClass('-active')) {
+       removeModal();
+       history.back();
+     }
+  };
+});
+
 // carousel
 var carouselOptions = $('.section-carousel .option');
 
