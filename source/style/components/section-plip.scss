@@ -9,6 +9,13 @@
 
   padding: 4rem 8vw;
 
+  @include media-smallonly {
+    padding: 2.5rem 6vw;
+  }
+  @include media-mediumonly {
+    padding: 3rem 5vw;
+  }
+
   & .blue {
     color: $blue;
   }
@@ -39,16 +46,29 @@
   }
 
   & h2 {
+    font-size: 2.5rem;
+
     margin-top: 2rem;
 
     text-align: center;
 
     color: $blue;
 
-    font-size: 2.5rem;
+    @include media-smallonly {
+      font-size: 1.25rem;
+
+      margin-top: .35rem;
+    }
+
+    @include media-mediumonly {
+      font-size: 1.75rem;
+
+      margin-top: 1.2rem;
+    }
   }
 
   & h3 {
+    font-size: 2rem;
     font-weight: bold;
     line-height: 1.2;
 
@@ -57,7 +77,14 @@
 
     margin-bottom: 1rem;
 
-    font-size: 2rem;
+    @include media-smallonly {
+      font-size: 1.25rem;
+
+      margin-bottom: 1rem;
+    }
+    @include media-mediumonly {
+      font-size: 1.45rem;
+    }
 
     &::before,
     &::after {
@@ -71,25 +98,46 @@
       content: '';
 
       background-color: $gray-light;
+
+      @include media-smallonly {
+        width: .2rem;
+        height: 1.5rem;
+      }
     }
 
     &::before {
       margin-right: 1rem;
+
+      @include media-smallonly {
+        margin-right: .7rem;
+      }
     }
 
     &::after {
       display: none;
 
       margin-left: 1rem;
+
+      @include media-smallonly {
+        margin-left: .7rem;
+      }
     }
   }
 
   & p {
+    font-size: 1.35rem;
     line-height: 1.5;
 
     margin-bottom: 1rem;
 
     color: $gray;
+
+    @include media-smallonly {
+      font-size: 1rem;
+    }
+    @include media-mediumonly {
+      font-size: 1.2rem;
+    }
   }
 
   & > .content {
@@ -97,6 +145,14 @@
     flex-direction: column;
 
     padding: 4rem 9vw;
+
+    @include media-smallonly {
+      padding: 2rem 0;
+    }
+
+    @include media-mediumonly {
+      padding: 2rem 0;
+    }
   }
 
   & > .content > .graph {
@@ -104,24 +160,32 @@
     align-items: center;
 
     padding: 2.5rem 0;
+
+    @include media-smallonly {
+      flex-direction: column;
+
+      padding: 1.2rem 0;
+    }
   }
 
   & > .content > .graph:nth-child(even) {
-    flex-direction: row-reverse;
+    @include media-smallup {
+      flex-direction: row-reverse;
 
-    & h3 {
-      &::before {
-        display: none;
+      & h3 {
+        &::before {
+          display: none;
+        }
+
+        &::after {
+          display: inline-block;
+        }
       }
 
-      &::after {
-        display: inline-block;
+      & > .image {
+        padding-right: 0;
+        padding-left: 2.5rem;
       }
-    }
-
-    & > .image {
-      padding-right: 0;
-      padding-left: 2.5rem;
     }
   }
 
@@ -130,9 +194,20 @@
 
     min-width: 10rem;
     padding-right: 2.5rem;
+
+    @include media-smallonly {
+      display: none;
+    }
+    @include media-mediumonly {
+      flex: 2;
+    }
   }
 
   & > .content > .graph > .text {
     flex: 8;
+
+    @include media-smallonly {
+      flex: 1;
+    }
   }
 }
