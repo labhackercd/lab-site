@@ -21,7 +21,7 @@ function toggleScroll() {
 }
 
 greenButtons.click(function(){
-  history.pushState(undefined, undefined, "#quem-somos");
+  history.pushState(undefined, undefined, "quem-somos");
 
   sectionAbout.addClass('-active');
   toggleScroll();
