@@ -2,79 +2,96 @@ import './style/style.scss';
 
 // modal
 
-const greenButtons = document.querySelectorAll('.lab-button.-green');
-const blueButtons = document.querySelectorAll('.lab-button.-blue');
-const orangeButtons = document.querySelectorAll('.lab-button.-orange');
-const sectionAbout = document.querySelector('.section-about');
-const sectionLinks = document.querySelector('.section-links');
-const sectionActivities = document.querySelector('.section-activities');
-const closeModals = document.querySelectorAll('.close-modal');
-const noScroll = document.querySelector('body');
-const carouselOptions = document.querySelectorAll('.section-carousel .option');
+var greenButtons = $('.lab-button.-green');
+var blueButtons = $('.lab-button.-blue');
+var orangeButtons = $('.lab-button.-orange');
+var sectionAbout = $('.section-about');
+var sectionLinks = $('.section-links');
+var sectionActivities = $('.section-activities');
+var closeModals = $('.close-modal');
 
-greenButtons.forEach(function(greenButton) {
-  greenButton.onclick = function() {
-    noScroll.classList.add('-noscroll');
-    sectionAbout.classList.add('-active');
+function toggleScroll() {
+  var body = $('body');
+  if (body.hasClass('-noscroll')) {
+    body.removeClass('-noscroll');
   }
-})
-
-blueButtons.forEach(function(blueButton) {
-  blueButton.onclick = function() {
-    noScroll.classList.add('-noscroll');
-    sectionLinks.classList.add('-active');
+  else {
+    body.addClass('-noscroll');
   }
-})
-
-orangeButtons.forEach(function(orangeButton) {
-  orangeButton.onclick = function() {
-    noScroll.classList.add('-noscroll');
-    sectionActivities.classList.add('-active');
-  }
-})
-
-closeModals.forEach(function(closeModal) {
-  closeModal.onclick = function() {
-    sectionAbout.classList.remove('-active');
-    sectionLinks.classList.remove('-active');
-    sectionActivities.classList.remove('-active');
-    noScroll.classList.remove('-noscroll');
-  }
-})
-
-// carousel
-function startCarousel() {
-  const activeItem = document.querySelector('.section-carousel .item.-active');
-  const activeOption = document.querySelector('.section-carousel .option.-active');
-  if (activeItem.nextElementSibling) {
-    activeItem.nextElementSibling.classList.add('-active');
-    activeOption.nextElementSibling.classList.add('-active');
-  } else {
-    activeItem.parentNode.firstElementChild.classList.add('-active');
-    activeOption.parentNode.firstElementChild.classList.add('-active');
-  }
-  activeItem.classList.remove('-active');
-  activeOption.classList.remove('-active');
 }
 
-const time = 5000;
-document.querySelector('.section-carousel .item:first-child').classList.add('-active');
-let carousel = setInterval(startCarousel, time);
+greenButtons.click(function(){
+  history.pushState(undefined, undefined, "#quem-somos");
 
-carouselOptions.forEach(function(carouselOption) {
-  carouselOption.onclick = function(e) {
-    const itemIndex = e.target.dataset.item;
+  sectionAbout.addClass('-active');
+  toggleScroll();
+});
 
-    const activeItem = document.querySelector('.section-carousel .item.-active');
-    const activeOption = document.querySelector('.section-carousel .option.-active');
-    activeItem.classList.remove('-active');
-    activeOption.classList.remove('-active');
+blueButtons.click(function(){
+  history.pushState(undefined, undefined, "nos-acompanhe");
+  sectionLinks.addClass('-active');
+  toggleScroll();
+});
 
-    const item = document.querySelectorAll('.section-carousel .item')[itemIndex];
-    item.classList.add('-active');
-    e.target.classList.add('-active');
+orangeButtons.click(function(){
+  history.pushState(undefined, undefined, "nossas-atividades");
+  sectionActivities.addClass('-active');
+  toggleScroll();
+});
+
+function removeModal() {
+  sectionAbout.removeClass('-active');
+  sectionLinks.removeClass('-active');
+  sectionActivities.removeClass('-active');
+  toggleScroll();
+}
+
+closeModals.click(function(){
+  removeModal();
+  history.back()
+});
+
+window.onpopstate = function(event) {
+  removeModal();
+};
+
+// carousel
+var carouselOptions = $('.section-carousel .option');
+
+function startCarousel() {
+  var activeItem = $('.section-carousel .item.-active');
+  var activeOption = $('.section-carousel .option.-active');
+
+  if (activeItem.next) {
+    activeItem.next().addClass('-active');
+    activeOption.next().addClass('-active');
+  } else {
+    activeItem.parent().first().addClass('-active');
+    activeOption.parent().first().addClass('-active');
+  }
+  activeItem.removeClass('-active');
+  activeOption.removeClass('-active');
+}
+
+var time = 5000;
+$('.section-carousel .item:first-child').addClass('-active');
+var carousel = setInterval(startCarousel, time);
+
+
+$.each(carouselOptions, function(i, carouselOption){
+  $(carouselOption).click(function(e) {
+    var itemIndex = parseInt($(e.target).data('item'));
+
+    var activeItem = $('.section-carousel .item.-active');
+    var activeOption = $('.section-carousel .option.-active');
+    activeItem.removeClass('-active');
+    activeOption.removeClass('-active');
+
+    var item = $('.section-carousel .item')[itemIndex];
+    $(item).addClass('-active');
+    $(e.target).addClass('-active');
 
     clearInterval(carousel);
     carousel = setInterval(startCarousel, time);
-  }
-})
+  })
+});
