@@ -53,6 +53,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    min-height: 100%;
 
     @include media-smallonly {
       padding: 2.5rem 9vw;
