@@ -1,0 +1,138 @@
+.section-plip {
+  $blue: #02638D;
+  $green: #6F9D82;
+  $orange: #F59B32;
+  $yellow: #FCC43E;
+  $red: #EF5D4E;
+  $gray: rgba(#000, .75);
+  $gray-light: rgba(#000, .35);
+
+  padding: 4rem 8vw;
+
+  & .blue {
+    color: $blue;
+  }
+
+  & .green {
+    color: $green;
+  }
+
+  & .yellow {
+    color: $yellow;
+  }
+
+  & .red {
+    color: $red;
+  }
+
+  & .orange {
+    color: $orange;
+  }
+
+  & img {
+    width: 100%;
+  }
+
+  & h2,
+  & h3 {
+    text-transform: uppercase;
+  }
+
+  & h2 {
+    margin-top: 2rem;
+
+    text-align: center;
+
+    color: $blue;
+
+    font-size: 2.5rem;
+  }
+
+  & h3 {
+    font-weight: bold;
+    line-height: 1.2;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 1rem;
+
+    font-size: 2rem;
+
+    &::before,
+    &::after {
+      font-weight: black;
+
+      display: inline-block;
+
+      width: .35rem;
+      height: 2.5rem;
+
+      content: '';
+
+      background-color: $gray-light;
+    }
+
+    &::before {
+      margin-right: 1rem;
+    }
+
+    &::after {
+      display: none;
+
+      margin-left: 1rem;
+    }
+  }
+
+  & p {
+    line-height: 1.5;
+
+    margin-bottom: 1rem;
+
+    color: $gray;
+  }
+
+  & > .content {
+    display: flex;
+    flex-direction: column;
+
+    padding: 4rem 9vw;
+  }
+
+  & > .content > .graph {
+    display: flex;
+    align-items: center;
+
+    padding: 2.5rem 0;
+  }
+
+  & > .content > .graph:nth-child(even) {
+    flex-direction: row-reverse;
+
+    & h3 {
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: inline-block;
+      }
+    }
+
+    & > .image {
+      padding-right: 0;
+      padding-left: 2.5rem;
+    }
+  }
+
+  & > .content > .graph > .image {
+    flex: 4;
+
+    min-width: 10rem;
+    padding-right: 2.5rem;
+  }
+
+  & > .content > .graph > .text {
+    flex: 8;
+  }
+}
