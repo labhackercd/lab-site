@@ -9,41 +9,32 @@ var sectionAbout = $('.section-about');
 var sectionLinks = $('.section-links');
 var sectionActivities = $('.section-activities');
 var closeModals = $('.close-modal');
-
-function toggleScroll() {
-  var body = $('body');
-  if (body.hasClass('-noscroll')) {
-    body.removeClass('-noscroll');
-  }
-  else {
-    body.addClass('-noscroll');
-  }
-}
+var body = $('body');
 
 greenButtons.click(function(){
   history.pushState(undefined, undefined, "quem-somos");
 
   sectionAbout.addClass('-active');
-  toggleScroll();
+  body.addClass('-noscroll');
 });
 
 blueButtons.click(function(){
   history.pushState(undefined, undefined, "nos-acompanhe");
   sectionLinks.addClass('-active');
-  toggleScroll();
+  body.addClass('-noscroll');
 });
 
 orangeButtons.click(function(){
   history.pushState(undefined, undefined, "nossas-atividades");
   sectionActivities.addClass('-active');
-  toggleScroll();
+  body.addClass('-noscroll');
 });
 
 function removeModal() {
   sectionAbout.removeClass('-active');
   sectionLinks.removeClass('-active');
   sectionActivities.removeClass('-active');
-  toggleScroll();
+  body.removeClass('-noscroll');
 }
 
 closeModals.click(function(){
