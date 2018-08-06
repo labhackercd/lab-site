@@ -63,12 +63,12 @@ function startCarousel() {
   var activeItem = $('.section-carousel .item.-active');
   var activeOption = $('.section-carousel .option.-active');
 
-  if (activeItem.next) {
+  if (activeItem.next()[0]) {
     activeItem.next().addClass('-active');
     activeOption.next().addClass('-active');
   } else {
-    activeItem.parent().first().addClass('-active');
-    activeOption.parent().first().addClass('-active');
+    activeItem.parent().children().first().addClass('-active');
+    activeOption.parent().children().first().addClass('-active');
   }
   activeItem.removeClass('-active');
   activeOption.removeClass('-active');
