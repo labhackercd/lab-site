@@ -4,11 +4,17 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lab Hacker</title>
-  <meta name="description" content="O LabHacker é um espaço na Câmara dos Deputados que promove o desenvolvimento colaborativo de projetos inovadores em cidadania relacionados ao Poder Legislativo">
-  <meta name="author" content="Feito pelo LabHacker da Câmara dos Deputados">
+  <title>LABhacker</title>
+  <meta property="og:image" content="http://labhackercd.leg.br/images/social.png">
+  <meta property="og:title" content="LABHacker - Câmara dos Deputados">
+  <meta property="og:description" content="O LABHacker é um espaço na Câmara dos Deputados que promove o desenvolvimento colaborativo de projetos inovadores em cidadania relacionados ao Poder Legislativo">
+  <meta name="twitter:image" content="http://labhackercd.leg.br/images/social.png">
+  <meta property="twitter:title" content="LABHacker - Câmara dos Deputados">
+  <meta property="twitter:description" content="O LABHacker é um espaço na Câmara dos Deputados que promove o desenvolvimento colaborativo de projetos inovadores em cidadania relacionados ao Poder Legislativo">
+  <meta name="description" content="O LABHacker é um espaço na Câmara dos Deputados que promove o desenvolvimento colaborativo de projetos inovadores em cidadania relacionados ao Poder Legislativo">
+  <meta name="author" content="Feito pelo LABHacker">
   <link rel="stylesheet" href="style.css" />
-  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png" />
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png" />
@@ -18,12 +24,17 @@
   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png" />
-  <meta name="application-name" content="Lab Hacker" />
+  <meta name="application-name" content="LABhacker" />
   <meta name="msapplication-TileColor" content="#FFFFFF" />
   <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png" />
   <link rel="manifest" href="manifest.json" />
   <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#33aa77" />
   <meta name="theme-color" content="#ffffff" />
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70690943-4"></script>
@@ -35,18 +46,18 @@
     gtag('config', 'UA-70690943-4');
   </script>
 
-<link href="style.css?f4cbbb26d5137151b4ae" rel="stylesheet"></head>
+<link href="style.css?5638e7570f647b29c49b" rel="stylesheet"></head>
 
 <body>
   <main>
     <section class="section-hero">
       <a class="logo" href="/">
-        <h1>Lab Hacker</h1>
+        <h1>LABHacker</h1>
       </a>
       <div class="content">
         <div class="section-carousel">
           <div class="list">
-            <h1 class="item">Auxiliamos na implementação de um parlamento aberto</h1>
+            <h1 class="item -active">Auxiliamos na implementação de um parlamento aberto</h1>
             <h1 class="item">Promovemos ações de transparência legislativa</h1>
             <h1 class="item">Desenvolvemos projetos de participação popular</h1>
           </div>
@@ -59,31 +70,32 @@
       </div>
     </section>
     <section class="section-buttons">
-      <button class="lab-button -green">Quem somos</button>
-      <button class="lab-button -orange">Nossas atividades</button>
-      <button class="lab-button -blue">Nos acompanhe</button>
+      <button class="lab-button -green js-openAbout">Quem somos</button>
+      <button class="lab-button -yellow js-openActivities">Nossas atividades</button>
+      <button class="lab-button -pink js-openLinks">Nos acompanhe</button>
     </section>
     <section class="section-whatwedo">
       <h2 class="title-section">O que fazemos</h2>
       <div class="thingswedo">
         <h3>Participação</h3>
         <img src="images/grapheme5.svg" alt="Participação"/>
-        <p>O LabHacker estimula o desenvolvimento de ações e ferramentas que ampliem a participação social no processo legislativo. É gestor do <a href="https://edemocracia.camara.leg.br/home" target="_blank" rel="noopener">Portal e-Democracia</a>, que apresenta diversos modelos de participação, como interação em audiências, edição colaborativa de projetos de lei e debates temáticos. As ferramentas do e-Democracia também <a href="https://g1.globo.com/distrito-federal/especial-publicitario/camara-legislativa/noticia/laboratorio-hacker-contribui-para-ampliar-transparencia-na-cldf.ghtml" target="_blank" rel="noopener">serão utilizadas por outros órgãos</a> do Legislativo e do Executivo. </p>
+        <p>O LABHacker estimula o desenvolvimento de ações e ferramentas que ampliem a participação social no processo legislativo. É gestor do <a href="https://edemocracia.camara.leg.br" target="_blank" rel="noopener">Portal e-Democracia da Câmara dos Deputados</a>, que apresenta diversos modelos de participação, como interação em audiências, edição colaborativa de projetos de lei e debates temáticos. O e-Democracia também <a href="https://edemocracia.leg.br" target="_blank" rel="noopener">pode ser utilizado por outros órgãos e entidades</a>. </p>
       </div>
       <div class="thingswedo">
         <h3>Transparência</h3>
         <img src="images/grapheme2.svg" alt="Transparência" />
-        <p>Incentivamos o desenvolvimento de aplicações digitais que permitam a <a href="https://www.youtube.com/watch?v=McH7GINO6Ng" target="_blank" rel="noopener">visualização mais intuitiva e simplificada das informações legislativas</a>. Produzimos <a href="https://medium.com/labhacker/labhacker-abre-c%C3%B3digo-do-portal-e-democracia-25cb00239724" target="_blank" rel="noopener">ferramentas em código aberto</a> e as liberamos no github para aperfeiçoamento e uso do software sem custos por outros órgãos públicos. Em 2017, trabalhamos na elaboração do <a href="https://docs.google.com/document/d/16yd1odN8jWoe8ZQgfpP7fIxJTCbXPl-mMhSSC803wV8/edit#heading=h.vkkouqt8cubl" target="_blank" rel="noopener">guia de Parlamento Aberto</a>, que orienta as vertentes de transparência, participação social e controle social para melhor capacitar os órgãos do Legislativo.</p>
+        <p>Incentivamos o desenvolvimento de aplicações digitais que permitam a <a href="https://www.youtube.com/watch?v=McH7GINO6Ng" target="_blank" rel="noopener">visualização mais intuitiva e simplificada das informações legislativas</a>. Produzimos <a href="https://medium.com/labhacker/labhacker-abre-c%C3%B3digo-do-portal-e-democracia-25cb00239724" target="_blank" rel="noopener">ferramentas em código aberto</a> e as liberamos no github para aperfeiçoamento e uso do software sem custos por outros órgãos públicos. Implantamos colaborativamente o <a href="https://www.parlamentoaberto.leg.br" target="_blank" rel="noopener">portal Parlamento Aberto</a>, que inspira outras casas legislativas em vertentes de transparência, participação e controle social. Em 2018, a proposta é aumentar  a compreensão dos cidadãos sobre as votações da Câmara, com <a href="https://www.youtube.com/watch?v=_GqUcjJxvoM" target="_blank" rel="noopener">experiências inovadoras</a> nos bastidores do plenário.
+        </p>
       </div>
       <div class="thingswedo">
         <h3>Experimentação</h3>
         <img src="images/grapheme3.svg" alt="Experimentação" />
-        <p>O LabHacker é um espaço de liberdade para experimentos e aprendizagem, <a href="https://medium.com/labhacker/erramos-com-o-mapa-participativo-e-que-bom-e4899d2dd2c9" target="_blank" rel="noopener">onde o erro é permitido</a> em busca da inovação, do olhar fora do convencional. Aqui realizamos <a href="https://medium.com/labhacker/aprendizados-de-testes-de-usabilidade-e2fe8e314474" target="_blank" rel="noopener">testes de usabilidade</a> para produtos e serviços, sempre com foco no interesse do cidadão. Também experimentamos ferramentas e debatemos o <a href="https://medium.com/labhacker/nossa-discuss%C3%A3o-sobre-o-blockchain-foi-uma-parada-muito-legal-f7f24b1ac070" target="_blank" rel="noopener">uso de novas tecnologias</a> para disseminar as melhores práticas.</p>
+        <p>O LABHacker é um espaço de liberdade para experimentos e aprendizagem, <a href="https://medium.com/labhacker/erramos-com-o-mapa-participativo-e-que-bom-e4899d2dd2c9" target="_blank" rel="noopener">onde o erro é permitido</a> em busca da inovação, do olhar fora do convencional. Aqui realizamos <a href="https://medium.com/labhacker/wikilegis-venha-botar-a-m%C3%A3o-na-massa-aeb11637d010 " target="_blank" rel="noopener">testes de usabilidade</a> para produtos e serviços, sempre com foco no interesse do cidadão. Também experimentamos ferramentas e debatemos o <a href="https://medium.com/labhacker/nossa-discuss%C3%A3o-sobre-o-blockchain-foi-uma-parada-muito-legal-f7f24b1ac070" target="_blank" rel="noopener">uso de novas tecnologias</a> para disseminar as melhores práticas.</p>
       </div>
       <div class="thingswedo">
         <h3>Colaboração</h3>
         <img src="images/grapheme4.svg" alt="Colaboração" />
-        <p>O LabHacker trabalha em <a href="https://medium.com/labhacker/manos-%C3%A0s-obras-nossa-experi%C3%AAncia-de-interc%C3%A2mbio-hacker-6b8e154cd82" target="_blank" rel="noopener">colaboração com uma rede de desenvolvedores</a> e de ativistas cívicos, tanto para melhorar seus projetos e ferramentas quanto para ampliar a participação social e a transparência no Legislativo. O trabalho colaborativo está no <a href="https://medium.com/labhacker/n%C3%B3s-do-lab-colabora%C3%A7%C3%A3o-e-inova%C3%A7%C3%A3o-em-debate-ed8ec973d27" target="_blank" rel="noopener">planejamento inicial das atividades</a>; na <a href="https://medium.com/labhacker/aprendizados-de-testes-de-usabilidade-e2fe8e314474" target="_blank" rel="noopener">troca de informações e expertise</a>; e na <a href="https://medium.com/labhacker/dados-abertos-2-0-d80d5f3699d8" target="_blank" rel="noopener">facilitação de processos para aumento da transparência</a> e da participação.</p>
+        <p>O LABHacker trabalha em <a href="https://medium.com/labhacker/manos-%C3%A0s-obras-nossa-experi%C3%AAncia-de-interc%C3%A2mbio-hacker-6b8e154cd82" target="_blank" rel="noopener">colaboração com uma rede de desenvolvedores</a> e de ativistas cívicos, tanto para melhorar seus projetos e ferramentas quanto para ampliar a participação social e a transparência no Legislativo. O trabalho colaborativo está no <a href="https://medium.com/labhacker/n%C3%B3s-do-lab-colabora%C3%A7%C3%A3o-e-inova%C3%A7%C3%A3o-em-debate-ed8ec973d27" target="_blank" rel="noopener">planejamento inicial das atividades</a>; na <a href="https://medium.com/labhacker/aprendizados-de-testes-de-usabilidade-e2fe8e314474" target="_blank" rel="noopener">troca de informações e expertise</a>; e na <a href="https://medium.com/labhacker/dados-abertos-2-0-d80d5f3699d8" target="_blank" rel="noopener">facilitação de processos para aumento da transparência</a> e da participação.</p>
       </div>
       <div class="thingswedo">
         <h3>Inspiração</h3>
@@ -92,16 +104,16 @@
       </div>
     </section>
     <section class="section-buttons">
-      <button class="lab-button -green">Quem somos</button>
-      <button class="lab-button -orange">Nossas atividades</button>
-      <button class="lab-button -blue">Nos acompanhe</button>
+      <button class="lab-button -green js-openAbout">Quem somos</button>
+      <button class="lab-button -yellow js-openActivities">Nossas atividades</button>
+      <button class="lab-button -pink js-openLinks">Nos acompanhe</button>
     </section>
     <section class="section-contact">
-      <p>Mande sugestões, críticas, ou ideias pra gente desenvolver 😉</p>
+      <p>Mande sugestões, críticas ou ideias pra gente desenvolver 😉</p>
       <a href="mailto:labhacker@camara.leg.br" target="_top">labhacker@camara.leg.br</a>
     </section>
     <section class="section-camara">
-      <h2>O Laboratório Hacker é uma iniciativa da Câmara dos deputados</h2>
+      <h2>O LABhacker é uma iniciativa da Câmara dos Deputados</h2>
       <a class="logo" href="http://www2.camara.leg.br/" target="_blank" rel="noopener">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448.25 126.79">
           <defs>
@@ -156,58 +168,36 @@
       <p>Todo o conteúdo deste site está publicado sob a licença <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR" target="_blank" rel="noopener">Creative Commons CC BY-SA 4.0</a> Brasil</p>
       <a class="fab fa-creative-commons fa-2x" href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR" target="_blank" rel="noopener"></a>
     </footer>
-    <section class="section-about">
+    <section class="section-about js-page">
       <a class="close-modal">Voltar</a>
       <header>
         <h3>Quem Somos</h3>
       </header>
       <main>
-        <p>O LabHacker é um espaço para promover o desenvolvimento colaborativo de projetos inovadores em cidadania relacionados ao Poder Legislativo. Criado pela Resolução 49, de 2013, este laboratório dentro da Câmara dos Deputados tem o objetivo de articular uma rede entre parlamentares, hackers e sociedade civil que contribua para a cultura da transparência e da participação social por meio da gestão de dados públicos.</p>
-        <p>Além de estimular o desenvolvimento de aplicações digitais que permitam a visualização mais intuitiva e simplificada das informações legislativas, o LabHacker promove atividades como maratonas hackers (hackathons), hackdays sobre temas inovadores, e oficinas de criação e discussão com especialistas, parlamentares, estudantes de universidades e escolas públicas, e crianças interessadas em tecnologia.</p>
+        <p>O LABhacker é um espaço para promover o desenvolvimento colaborativo de projetos inovadores em cidadania relacionados ao Poder Legislativo. Criado pela Resolução 49, de 2013, este laboratório dentro da Câmara dos Deputados tem o objetivo de articular uma rede entre parlamentares, hackers e sociedade civil que contribua para a cultura da transparência e da participação social por meio da gestão de dados públicos.</p>
+        <p>Além de estimular o desenvolvimento de aplicações digitais que permitam a visualização mais intuitiva e simplificada das informações legislativas, o LABhacker promove atividades como maratonas hackers (hackathons), hackdays sobre temas inovadores, além de oficinas de criação e discussão com especialistas, parlamentares, estudantes de universidades e escolas públicas, e crianças interessadas em tecnologia.</p>
         <p>O laboratório também é responsável pela governança do portal e-Democracia, uma plataforma de participação que amplia a transparência da atividade legislativa e a interação entre os parlamentares e a sociedade.</p>
-        <p>Qualquer pessoa interessada em projetos de cidadania, especialmente programadores e desenvolvedores de softwares, pode trabalhar livremente no ambiente do LabHacker. Visite-nos no Anexo IV da Câmara, Subsolo, sala 90.</p>
-        <iframe title="Vídeo sobre o LabHacker" class="video" src="https://www.youtube.com/embed/tYCfywPzzNA" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <p>Qualquer pessoa interessada em projetos de cidadania, especialmente programadores e desenvolvedores de softwares, pode trabalhar livremente no ambiente do LABhacker. Visite-nos no Anexo IV da Câmara, Subsolo, sala 90.</p>
       </main>
       <section class="section-card">
         <div class="cards">
           <div class="item">
             <div class="card">
-              <img class="avatar" src="images/members/cris.jpg" alt="Membro" />
-              <span class="name">Cristiano Ferri Faria 🚢</span>
-              <span class="position">Diretor - FC-03</span>
-              <p>Cristiano é o Diretor do Laboratório Hacker da Câmara dos Deputados. É também idealizador do Portal e-Democracia. Como servidor da Câmara dos Deputados desde 1993, tem trabalhado em projetos relativos ao processo legislativo, qualidade da lei, transparência legislativa, democracia digital, atividades colaborativas (maratonas hacker) e inovação. Doutor em ciência política e sociologia pela Universidade do Estado do Rio de Janeiro - Instituto de Estudos Sociais e Políticos, Mestre em Políticas Públicas pela Queen Mary College - Universidade de Londres e pesquisador associado do Ash Center for Democratic Governance and Innovation da Universidade de Harvard.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card">
-              <img class="avatar" src="images/members/roberta.jpg" alt="Membro" />
-              <span class="name">Roberta Rabay 🚢</span>
+              <img class="avatar" src="images/members/patricia.jpg" alt="Membro" />
+              <span class="name">Patrícia Roedel 🏃‍♀️</span>
               <span class="position">Diretora - FC-03</span>
-              <p>Roberta é diretora do Laboratório Hacker da Câmara dos Deputados desde dezembro de 2017. Ingressou na Câmara em 1999, trabalhou na área de Tecnologia da Informação, onde atuou em desenvolvimento de portais, experiência do usuário, comunicação interna e gestão de pessoas. Formou-se em Ciência da Computação pela UFPB e possui MBA em Governança de TIC.</p>
+              <p>Patricia Roedel é diretora do LABhacker desde maio de 2019 e também gerente do projeto de mudança do portal da Câmara – Virada Digital. Jornalista, idealizou ou participou da concepção de várias iniciativas inovadoras da Câmara dos Deputados, como a criação de uma agência de notícias e a introdução de ferramentas de participação popular no portal, como comentários de notícias, audiências interativas e enquetes.
+
+              Foi diretora de Jornalismo dos veículos de comunicação da Câmara, diretora da Agência Câmara de Notícias e atuou também na área de Planejamento Estratégico da Casa, onde pôde inovar com a remodelação de processos de trabalho e identificação, clusterização e definição de matriz de problemas críticos da instituição.
+              É ativista da comunicação pública e da transparência, sendo sócia-fundadora da Associação Brasileira de Comunicação Pública.</p>
             </div>
           </div>
           <div class="item">
             <div class="card">
-              <img class="avatar" src="images/members/rogerio.jpg" alt="Membro" />
-              <span class="name">Rogério Scheidemantel ⚓️</span>
-              <span class="position">Diretor-Adjunto - FC-02</span>
-              <p>Rogério é o Diretor Adjunto do Laboratório Hacker da Câmara dos Deputados. Mestre em Engenharia Elétrica-Telecomunicações pela Universidade de Brasília, com ampla experiência em projetos de hardware de comunicação e criptografia. Rogério trabalha como Analista Legislativo da Câmara dos Deputados desde 2002, nas áreas de Processo Legislativo e Orçamento Público.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card">
-              <img class="avatar" src="images/members/paulo.jpg" alt="Membro" />
-              <span class="name">Paulo Henrique Araújo 🎩</span>
-              <span class="position">Gestor de Tecnologia - FC-01</span>
-              <p>Paulo Henrique Araújo, mestre em Ciência da Computação pela UFMG, gerente de projetos, militante por inovação, pesquisa e desenvolvimento no serviço público e pela promoção de mecanismos de transparência e participação popular no governo.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card">
-              <img class="avatar" src="images/members/pedro.jpg" alt="Membro" />
-              <span class="name">Pedro Brandão ☕️</span>
-              <span class="position">Gestor de tecnologia</span>
-              <p>Pedro é Analista Legislativo da Câmara dos Deputados. Tem formação em Ciência da Computação pela UnB e atua no LabHacker em iniciativas de dados abertos, em projetos de participação, em projetos experimentais e auxiliando decisões tecnológicas.</p>
+              <img class="avatar" src="images/members/walter.jpg" alt="Membro" />
+              <span class="name">Walternor Brandão 🚓</span>
+              <span class="position">Diretor Adjunto - FC-02</span>
+              <p>Walternor é Analista Legislativo da Câmara dos Deputados e Mestre em Poder Legislativo pelo CEFOR - Câmara dos Deputados. Atualmente exerce as funções de Gestor do Portal e-Democracia da Câmara dos Deputados, colaborando para o desenvolvimento de tecnologias de participação popular e transparência pública.</p>
             </div>
           </div>
           <div class="item">
@@ -220,18 +210,18 @@
           </div>
           <div class="item">
             <div class="card">
-              <img class="avatar" src="images/members/walter.jpg" alt="Membro" />
-              <span class="name">Walternor Brandão 👟</span>
-              <span class="position">Gestor do Portal e-Democracia - FC-01</span>
-              <p>Walternor é Analista Legislativo da Câmara dos Deputados e Mestre em Poder Legislativo pelo CEFOR - Câmara dos Deputados. Atualmente exerce as funções de Gestor do Portal e-Democracia da Câmara dos Deputados, colaborando para o desenvolvimento de tecnologias de participação popular e transparência pública no âmbito do Laboratório Hacker da Câmara dos Deputados.</p>
+              <img class="avatar" src="images/members/roberta.jpg" alt="Membro" />
+              <span class="name">Roberta Rabay 🦋</span>
+              <span class="position">Inovadora digital - FC-01</span>
+              <p>Roberta foi diretora do LABhacker de dezembro de 2017 a agosto de 2018. Ingressou na Câmara em 1999, trabalhou na área de Tecnologia da Informação, onde atuou em desenvolvimento de portais, experiência do usuário, comunicação interna e gestão de pessoas. Formou-se em Ciência da Computação pela UFPB e possui MBA em Governança de TIC. Está listada entre as 100 pessoas mais influentes em Governo Digital do Mundo de 2018 pelo Apolitical.</p>
             </div>
           </div>
           <div class="item">
             <div class="card">
-              <img class="avatar" src="images/members/luciana.jpg" alt="Membro" />
-              <span class="name">Luciana Ribeiro 🚲</span>
-              <span class="position">Assessora para o Portal e-Democracia</span>
-              <p>Luciana é Técnico Legislativo da Câmara dos Deputados e atua no Labhacker como Assessora para o portal e-Democracia. Tem formação em Odontologia, estudante de Marketing e também é monitora de Visitação Institucional do Congresso Nacional.</p>
+              <img class="avatar" src="images/members/pedro.jpg" alt="Membro" />
+              <span class="name">Pedro Brandão ☕️</span>
+              <span class="position">Gestor de tecnologia</span>
+              <p>Pedro é Analista Legislativo da Câmara dos Deputados. Tem formação em Ciência da Computação pela UnB e atua no LABhacker em iniciativas de dados abertos, projetos de participação, e ações experimentais e tecnológicas.</p>
             </div>
           </div>
           <div class="item">
@@ -239,7 +229,15 @@
               <img class="avatar" src="images/members/diego.jpg" alt="Membro" />
               <span class="name">Diego Cavalcanti Cunha 🥕</span>
               <span class="position">Assessor para o Portal e-Democracia, Redator, Tradutor</span>
-              <p>Diego é Analista Legislativo. É servidor público desde 2007 com passagem pelos Ministérios da Cultura e Relações Exteriores. Tem formação em Arquitetura e seu trabalho no Labhacker é variado auxiliando na gestão do e-Democracia, eventos, pesquisa e atuando na divulgação fazendo apresentações.</p>
+              <p>Diego é Analista Legislativo e servidor público desde 2007, com passagem pelos ministérios da Cultura e de Relações Exteriores. Tem formação em Arquitetura e seu trabalho no LABhacker é variado, auxiliando na gestão do e-Democracia, na apresentação em eventos e também em traduções e pesquisas.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="avatar" src="images/members/ricardo.jpg" alt="Membro" />
+              <span class="name">Ricardo Fernandes 🤬</span>
+              <span class="position">Analista Legislativo</span>
+              <p>Ricardo Fernandes Paixão é professor na Faculdade de Direito da UnB onde leciona disciplinas de empreendedorismo e regulação de inovação financeira (fintechs). Foi professor na USP e no PROVAR/LABFIN da Fundação Instituto de Administração. É doutor em administração pela FEA USP, MBA pelo INSEAD, mestrando em direito econômico pela USP São Francisco. No LABhacker trabalha com projeto de criação de um ecossistema de empreendedorismo cívico.</p>
             </div>
           </div>
           <div class="item">
@@ -247,62 +245,78 @@
               <img class="avatar" src="images/members/matheus.jpg" alt="Membro" />
               <span class="name">Matheus Fernandes 🎸</span>
               <span class="position">Desenvolvedor e administrador de sistemas</span>
-              <p>Matheus é formado em Engenharia de Software pela Universidade de Brasília, pythonista e desenvolvedor backend no Laboratório Hacker da Câmara dos Deputados. Atua no desenvolvimento e manutenção de projetos de software, bem como no desenvolvimento e automação de operações relacionadas a esses projetos.</p>
+              <p>Matheus é formado em Engenharia de Software pela Universidade de Brasília. É pythonista e desenvolvedor backend no LABhacker. Atua no desenvolvimento e manutenção de projetos de software, assim como na automação de operações relacionadas a esses projetos.</p>
             </div>
           </div>
           <div class="item">
             <div class="card">
               <img class="avatar" src="images/members/erivanio.jpg" alt="Membro" />
-              <span class="name">Erivânio Vasconcelos 🍺</span>
+              <span class="name">Erivânio Vasconcelos 💪</span>
               <span class="position">Desenvolvedor e administrador de sistemas</span>
-              <p>Erivânio é desenvolvedor do Laboratório Hacker da Câmara dos Deputados. Tem formação em Análise e Desenvolvimento de Sistemas pelo IFPI e atua no Labhacker na criação e manutenção de projetos e administração de servidores.</p>
+              <p>Erivânio é desenvolvedor do LABhacker. Tem formação em Análise e Desenvolvimento de Sistemas pelo IFPI e atua no LABhacker na criação e manutenção de projetos e administração de servidores.</p>
             </div>
           </div>
           <div class="item">
             <div class="card">
               <img class="avatar" src="images/members/caio.jpg" alt="Membro" />
               <span class="name">Caio Viotti 🎮</span>
-              <span class="position">Desenvolvedor de interfaces web</span>
-              <p>Caio é aficionado por design, ergonomia, e apaixonado por tecnologia, atua como desenvolvedor Front-End do LabHacker na implementação de interfaces de aplicações web, com foco na experiência de usuário. É entusiasta de Software Livre e advoca por sua disseminação, especialmente no Setor Público. Já atuou também com tecnologias do Legislativo no Programa Interlegis do Senado Federal.</p>
+              <span class="position">Designer e Desenvolvedor de interfaces web</span>
+              <p>Aficionado por UX, UI, e tecnologia. É lotado como Desenvolvedor Front-end no LABhacker, mas se considera um designer generalista que permeia pelas áreas de pesquisa, ideação, prototipação e implementação de ferramentas tecnológicas. Gosta mesmo é de investigar os reais problemas por debaixo da superfície e quebrar a cabeça com os amigos do LAB em como resolvê-los. Ajuda sempre no que pode e não se importa de fazer o que não está necessariamente descrito em suas responsabilidades.</p>
             </div>
           </div>
           <div class="item">
-            <div class="card">
-              <img class="avatar" src="images/members/joao.jpg" alt="Membro" />
-              <span class="name">João Lúcio Dreyer 🦇</span>
-              <span class="position">Designer, Webdesigner, Publicitário, Ilustrador, Videografista</span>
-              <p>João é formado em Publicidade e Propaganda, Sempre procurando aprender mais sobre a área de design e os mistérios das artes visuais, Maneja as poderosas ferramentas do Design, como: Photoshop, CorelDraw, Ilustrator, After effects e recentemente buscando desvendar Maya. Tentando ser o mais versátil possivel na área, fazendo o trabalho de Design Gráfico, WebDesigner, Design de interiores, Ilustrador, Videografista, Editor de vídeo, entre outros.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card">
-              <img class="avatar" src="images/members/gabi.jpg" alt="Membro" />
-              <span class="name">Gabriela Carvalho 💣</span>
-              <span class="position">Documentadora Operadora Micro Sênior</span>
-              <p>Gabriela é Documentadora Operadora Micro Sênior da Câmara dos Deputados e atua no LabHacker como Assistente Administrativa e Supervisora das Atividades Hackers. É estudante de Direito na UDF e participa das organizações dos eventos de interesse do Laboratório Hacker.</p>
-            </div>
-          </div>
-          <!-- <div class="item">
             <div class="card">
               <img class="avatar" src="images/members/petterson.jpg" alt="Membro" />
-              <span class="name">Petterson Alves </span>
+              <span class="name">Petterson Alves 🍯</span>
               <span class="position">Designer e Desenvolvedor de Interfaces Web</span>
-              <p>Gabriela é Documentadora Operadora Micro Sênior da Câmara dos Deputados e atua no LabHacker como Assistente Administrativa e Supervisora das Atividades Hackers. É estudante de Direito na UDF e participa das organizações dos eventos de interesse do Laboratório Hacker.</p>
+              <p>Petterson, atua como designer e desenvolvedor no LABhacker. Tem formação em design com testes de usabilidade, desenho de interfaces digitais, composição gráfica e desenvolvimento front-end.</p>
             </div>
-          </div> -->
+          </div>
           <div class="item">
             <div class="card">
-              <img class="avatar" src="images/members/giovanna.jpg" alt="Membro" />
-              <span class="name">Giovanna 🎈</span>
-              <span class="position">Auxiliar Administrativa</span>
-              <p>Giovanna é pró-adolescente da câmara dos deputados e atua no LabHacker como Auxiliar Administrativa das atividades hackers. É estudante do ensino médio e participa das funções administrativas e dos eventos de interesse do Laboratório Hacker.</p>
+              <img class="avatar" src="images/members/joa1.jpg" alt="Membro" />
+              <span class="name">João Victor Maciel 🚀</span>
+              <span class="position">Designer Multimídia</span>
+              <p>Joã1 ou João Victor para os mais sérios, é criativo radicado em Comunicação na UnB e apaixonado por café e reggaeton. Atua no LAB como Designer Multimidia unindo aprendizados adquiridos pelos mais diferentes cantos do mundo, como Japão e Colômbia, e skills de comunicação, publicidade, design, produção e audiovisual.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="avatar" src="images/members/taiane.jpg" alt="Membro" />
+              <span class="name">Taiane Jacobina 👜</span>
+              <span class="position">Documentadora Operadora Micro Sênior</span>
+              <p>Tai atua no LABhacker como assistente administrativa e supervisora das atividades hackers. É estudante de Direito, tem curso na área de coaching e relações inteligentes e influenciadora digital.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="avatar" src="images/members/amanda.jpg" alt="Membro" />
+              <span class="name">Amanda Dimes 🦒</span>
+              <span class="position">Estagiária de Comunicação</span>
+              <p>Amanda é estagiária de comunicação do LABHacker. É estudante de Comunicação Organizacional na UnB e atua com planejamento e o desenvolvimento de ideias que tenham impacto social de forma criativa.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="avatar" src="images/members/julia.jpg" alt="Membro" />
+              <span class="name">Júlia Escovar 🎭</span>
+              <span class="position">Estagiária de Comunicação</span>
+              <p>Júlia, estudante de Publicidade e Propaganda no Centro Universitário IESB, atua como estagiária de Comunicação no LABhacker. Sua função é contribuir com engajamento, criatividade e inovação no assessoramento das mídias do laboratório.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="avatar" src="images/members/juliamenor.jpg" alt="Membro" />
+              <span class="name">Júlia Abreu 👧</span>
+              <span class="position">Pró-adolescente</span>
+              <p>Júlia é estudante do ensino médio e <a href="http://www2.camara.leg.br/a-camara/programas-institucionais/formacao-para-o-trabalho/programa-pro-adolescente/programa-de-apoio-ao-trabalho-do-adolescente" target="_blank">pró-adolescente</a> da Câmara dos Deputados. No LABhacker, auxilia nas atividades hackers e nos eventos.</p>
             </div>
           </div>
         </div>
       </section>
     </section>
 
-    <section class="section-activities">
+    <section class="section-activities js-page">
       <a class="close-modal">Voltar</a>
       <header>
         <h3>Nossas Atividades</h3>
@@ -310,51 +324,83 @@
       <section class="section-card">
         <p>Confira alguns exemplos do que a gente faz por aqui para ajudar no aprimoramento da transparência legislativa e da participação social no Parlamento:</p>
         <div class="cards">
-          <a href="https://edemocracia.camara.leg.br/pautaparticipativa/relatorio-pauta-1" class="item" target="_blank" rel="noopener">
+          <div class="item">
             <div class="card">
-              <img class="image" src="images/image-card.jpg" alt="Imagem" />
-              <span class="name">Pauta Participativa</span>
-              <span class="position">2017</span>
-              <p>A ferramenta foi criada em setembro de 2017 para aproximar a pauta de votações da Câmara e os anseios da sociedade, permitindo que os cidadãos opinem sobre os projetos que devem ser votados pelo Plenário.</p>
+              <img class="image" src="images/image-card-14.jpg" alt="Imagem" />
+              <span class="name">Participação em audiências interativas</span>
+              <p>Além de acompanhar ao vivo as audiências públicas das comissões da Câmara, agora também é possível <a href="https://edemocracia.camara.leg.br/audiencias/sala/5" target="_blank" rel="noopener">encaminhar perguntas sobre o tema do debate</a> pela ferramenta Audiências Interativas do e-Democracia, desenvolvida pelo LABhacker. As perguntas mais votadas pelos próprios cidadãos são lidas e respondidas ao vivo durante o evento pelos deputados ou convidados. As respostas são marcadas no vídeo e, a qualquer tempo, é possível buscar a sala da audiência para ter acesso à integra do vídeo e às perguntas realizadas e respectivas respostas. Também há um espaço de bate-papo para interação entre os usuários durante o evento.</p>
             </div>
-          </a>
-          <a href="https://medium.com/labhacker/novo-e-democracia-ou-por-que-estamos-t%C3%A3o-sumidos-ea200e30f265" class="item" target="_blank" rel="noopener">
+          </div>
+          <div class="item">
             <div class="card">
-              <img class="image" src="images/image-card-2.jpg" alt="Imagem" />
-              <span class="name">Novo e-Democracia</span>
-              <span class="position">2017</span>
-              <p>A versão atual do portal e-Democracia, lançada em abril de 2017, foi desenvolvida para ser mais intuitiva ao usuário; e o conteúdo traz novos serviços, além de aperfeiçoamentos nas ferramentas já existentes.</p>
+              <img class="image" src="images/image-card-9.jpg" alt="Imagem" />
+              <span class="name">Edição colaborativa de projetos</span>
+              <p>O Wikilegis é uma ferramenta do e-Democracia desenvolvida pelo LABhacker que permite aos cidadãos a participação ativa na construção dos textos de leis com os deputados relatores dos projetos. As pessoas interessadas no tema podem <a href="https://edemocracia.camara.leg.br/wikilegis/bill/46" target="_blank" rel="noopener">encaminhar sugestões de mudanças no texto</a>, artigo por artigo; fazer comentários; e ainda apoiar ou rejeitar integralmente, ou em partes, a proposta. As contribuições coletivas são apresentadas de forma organizada e estruturada, facilitando a análise e possível incorporação ao texto final pelo relator. Por meio dessa funcionalidade, milhares de internautas contribuíram para a redação de leis como o Código de Processo Civil; o Marco Civil da Internet; o Estatuto da Pessoa com Deficiência; e o Estatuto da Juventude, entre outras.</p>
             </div>
-          </a>
-          <a href="https://medium.com/labhacker/por-que-hackathons-ainda-s%C3%A3o-importantes-a-experi%C3%AAncia-do-primeiro-hackathon-legislativo-global-e4ae4ab64edb" class="item" target="_blank" rel="noopener">
+          </div>
+          <div class="item">
             <div class="card">
-              <img class="image" src="images/image-card-3.jpg" alt="Imagem" />
-              <span class="name">1º Hackathon Legislativo Mundial</span>
-              <span class="position">2016</span>
-              <p>O LabHacker coordenou, em junho de 2016, no Chile, a 1ª maratona com hackers cívicos e desenvolvedores para criação de sites e aplicativos focados em transparência e participação social nos Parlamentos. E os vencedores vieram para o Lab.</p>
+              <img class="image" src="images/image-card-10.jpg" alt="Imagem" />
+              <span class="name">Inclusão de temas na pauta da Câmara</span>
+              <p>Uma das ferramentas do e-Democracia, a Pauta Participativa foi desenvolvida em 2017 para os cidadãos poderem ajudar na elaboração da pauta, escolhendo, para análise do Plenário, as propostas que acham prioritárias. O <a href="https://edemocracia.camara.leg.br/pautaparticipativa/pauta/1" target="_blank" rel="noopener">projeto-piloto</a> foi realizado em setembro e contou com 7.585 participantes, que votaram em proposições nas áreas de saúde, segurança e política. Todo o processo foi acompanhado e avaliado por especialistas em ações de participação social. A documentação desse trabalho, incluindo a avaliação dos cidadãos participantes e informações sobre a metodologia utilizada (D21), está disponível na página.</p>
             </div>
-          </a>
-          <a href="https://medium.com/labhacker/blockchain-na-c%C3%A2mara-dos-deputados-rola-93fadcbe703a" class="item" target="_blank" rel="noopener">
+          </div>
+          <div class="item">
             <div class="card">
-              <img class="image" src="images/image-card-5.jpg" alt="Imagem" />
-              <span class="name">BlockChain</span>
-              <span class="position">2016</span>
-              <p>Em maio de 2016, o LabHacker provocou o debate com especialistas, servidores públicos e interessados sobre o uso do Blockchain, e como essa nova tecnologia poderia ser útil e segura nos processos internos da Câmara.</p>
+              <img class="image" src="images/image-card-13.jpg" alt="Imagem" />
+              <span class="name">Abertura do Parlamento</span>
+              <p>O Laboratório Hacker, em parceria com as casas legislativas e instituições da sociedade civil, coordena o <a href="http://www.governoaberto.cgu.gov.br/noticias/2017/monitoramento/3o-plano-de-acao-brasileiro/parlamento/entrada" target="_blank" rel="noopener">compromisso 11</a> do <a href="http://www.governoaberto.cgu.gov.br/noticias/2017/monitoramento/3o-plano-de-acao-brasileiro" target="_blank" rel="noopener">3º Plano de Ação do Brasil</a> junto à <a href="https://www.opengovpartnership.org/" target="_blank" rel="noopener">OGP</a>. Como um dos marcos desse compromisso, o grupo construiu, de maneira colaborativa e aberta, o <a href="http://bit.ly/guiadoparlamentoaberto" target="_blank" rel="noopener">Guia para um Parlamento Aberto</a>, para orientar, de forma prática, as vertentes de transparência, participação social e controle social no Parlamento. Outros marcos do compromisso são a construção do Portal <a href="http://www.parlamentoaberto.leg.br" target="_blank" rel="noopener">Parlamento Aberto</a> - com normas, ferramentas, capacitações, guias e práticas de Parlamento Aberto -, e a disponibilização do <a href="http://www.edemocracia.leg.br/" target="_blank" rel="noopener">e-Democracia</a> entre as plataformas oferecidas pelo programa Interlegis para difundir o uso da ferramenta por todas as casas legislativas do País.</p>
             </div>
-          </a>
-          <a href="https://medium.com/labhacker/pequenos-hackers-aqui-no-lab-be63eb2435cc" class="item" target="_blank" rel="noopener">
+          </div>
+          <div class="item">
             <div class="card">
-              <img class="image" src="images/image-card-4.jpg" alt="Imagem" />
-              <span class="name">Oficinas Pequenos Hackers</span>
-              <span class="position">2017</span>
-              <p>A versão atual do portal e-Democracia, lançada em abril de 2017, foi desenvolvida para ser mais intuitiva ao usuário; e o conteúdo traz novos serviços, além de aperfeiçoamentos nas ferramentas já existentes.</p>
+              <img class="image" src="images/image-card-11.jpg" alt="Imagem" />
+              <span class="name">Análise de manifestações políticas</span>
+              <p>O LABhacker trabalha no desenvolvimento de uma plataforma que facilitará a análise sobre manifestações políticas. Esse repositório colaborativo, chamado de Babel, terá informações vindas de redes sociais, pronunciamentos, publicações oficiais, notícias, blogs e outras entradas. Isso possibilitará que softwares e analistas de dados possam cruzar essas informações e compreender o posicionamento de qualquer pessoa ou instituição sobre temas políticos.</p>
             </div>
-          </a>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="image" src="images/image-card-6.jpg" alt="Imagem" />
+              <span class="name">Estudos colaborativos em mídias sociais</span>
+              <p>O LABhacker estimula a criação de grupos de estudo multidisciplinares e com participantes de vários órgãos públicos para aprofundar o debate e disseminar as boas práticas sobre temas relacionados a <a href="https://www.youtube.com/playlist?list=PLqiFjCF_dtcwRE_69KmkymznLmhNT_8kF" target="_blank" rel="noopener">mídias sociais</a> e <a href="https://www.youtube.com/playlist?list=PLqiFjCF_dtcz_Us2fGqIDwAzhT_TUh6EO" target="_blank" rel="noopener">análise de redes</a>. Esses estudos são realizados quinzenalmente e transmitidos ao vivo pelo Youtube, para que todos os interessados possam participar ou ter acesso posterior ao debate.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="image" src="images/image-card-15.jpg" alt="Imagem" />
+              <span class="name">Experimentos de transparência imersiva</span>
+              <p>Uma das novidades do LAB é o <a href="https://www.youtube.com/watch?v=_GqUcjJxvoM" target="_blank" rel="noopener">experimento 360 graus</a>, em que o cidadão pode acompanhar, de dentro do plenário da Câmara, a votação de alguma proposta importante para a sociedade. O LABhacker acredita que projetos como esse são fundamentais para aumentar a transparência do Parlamento e facilitar a compreensão da sociedade sobre o processo legislativo.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="image" src="images/image-card-7.jpg" alt="Imagem" />
+              <span class="name">Debates provocativos</span>
+              <p>Realizamos <a href="https://www.youtube.com/playlist?list=PLqiFjCF_dtczKNM4d6PphhqCPIXR73y6n" target="_blank" rel="noopener">palestras sobre temas desafiadores</a>, como novas tecnologias e inovação no serviço público, para estimular servidores, funcionários, parlamentares, hackers cívicos, estudantes e demais interessados. A pauta desses debates é sempre divulgada em todas as redes sociais do LABhacker e as apresentações são transmitidas ao vivo pelo YouTube.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="image" src="images/image-card-12.jpg" alt="Imagem" />
+              <span class="name">Disseminação da cultura de participação social</span>
+              <p>Parceria entre Câmara, Senado e Interlegis em 2018 agora possibilita que o portal e-Democracia, plataforma de participação social desenvolvida pelo LABhacker, seja distribuído para Câmaras Legislativas e Assembleias de todo o País. O primeiro município a utilizar a plataforma para seus cidadãos é Três Corações, em Minas Gerais.</p>
+              <p>Em Brasília, a Câmara Legislativa do Distrito Federal, a Anvisa e a Anac já trabalham na <a href="http://www.edemocracia.leg.br/" target="_blank" rel="noopener">plataforma</a>. Em abril, o Parlamento Francês informou seu interesse pelo e-Democracia. Essa transferência de tecnologia deverá abrir caminho para que outros países passem a usar a ferramenta de participação social, que é gratuita e modulável.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img class="image" src="images/image-card-8.jpg" alt="Imagem" />
+              <span class="name">Assessoria para institucionalização de inovações cívicas</span>
+              <p>O LABhacker iniciou o <a href="http://labhackercd.leg.br/plip" target="_blank" rel="noopener">debate</a> para a criação do Projeto de Lei de Iniciativa Popular Digital (<a href="http://www.camara.gov.br/proposicoesWeb/prop_mostrarintegra?codteor=1639627&filename=Tramitacao-PL+7574/2017" target="_blank" rel="noopener">PL 7574/17</a>), que facilita a vida do cidadão e a participação social ao permitir o encaminhamento de abaixo-assinados da população, por meio eletrônico, para o recebimento de propostas de iniciativa popular. Esse debate, que incluiu desde a possibilidade de uso da tecnologia Blockchain no processo legislativo à checagem de dados dos cidadãos por meio do banco de dados do Tribunal Superior Eleitoral (TSE) e outras questões técnicas, contou com a participação fundamental de consultores da Câmara, parlamentares e especialistas. Agora o projeto já está pronto para ser votado pelo Plenário da Casa.</p>
+              <p>Outra proposição que contou com o assessoramento do LABhacker foi o <a href="http://www.camara.gov.br/proposicoesWeb/prop_mostrarintegra;jsessionid=22CCB8CBD65D4C7335501F1BF35E7D5D.proposicoesWeb1?codteor=1628844&filename=Tramitacao-PRC+217/2017" target="_blank" rel="noopener">PRC 217/2017</a>, que institucionaliza a participação cidadã e amplia a transparência do processo legislativo na Câmara dos Deputados.</p>
+            </div>
+          </div>
         </div>
       </section>
     </section>
 
-    <section class="section-links">
+    <section class="section-links js-page">
       <a class="close-modal">Voltar</a>
       <header>
         <h3>Nos Acompanhe</h3>
@@ -363,33 +409,33 @@
         <div class="item">
           <span class="title">Compartilhando</span>
           <div class="list">
-            <a class="icon-before -facebook" href="https://www.facebook.com/LabHackerCD" target="_blank" rel="noopener">Facebook</a>
-            <a class="icon-before -instagram" href="https://www.instagram.com/labhackercd/" target="_blank" rel="noopener">Instagram</a>
-            <a class="icon-before -twitter" href="https://twitter.com/labhackercd" target="_blank" rel="noopener">Twitter</a>
-            <a class="icon-before -youtube" href="https://www.youtube.com/channel/UC8Fnw6XN_gBDqAHSR4rp0NQ" target="_blank" rel="noopener">Youtube</a>
-            <a class="icon-before -flickr" href="https://www.flickr.com/photos/labhackercd/albums" target="_blank" rel="noopener">Flickr</a>
+            <a class="icon" href="https://www.facebook.com/LabHackerCD" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i>Facebook</a>
+            <a class="icon" href="https://www.instagram.com/labhackercd/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i>Instagram</a>
+            <a class="icon" href="https://twitter.com/labhackercd" target="_blank" rel="noopener"><i class="fab fa-twitter"></i>Twitter</a>
+            <a class="icon" href="https://www.youtube.com/channel/UC8Fnw6XN_gBDqAHSR4rp0NQ" target="_blank" rel="noopener"><i class="fab fa-youtube"></i>Youtube</a>
+            <a class="icon" href="https://www.flickr.com/photos/labhackercd/albums" target="_blank" rel="noopener"><i class="fab fa-flickr"></i>Flickr</a>
           </div>
         </div>
         <div class="item"> <span class="title">Inspirando</span>
           <div class="list">
-            <a class="icon-before -github" href="https://github.com/labhackercd" target="_blank" rel="noopener">Github</a>
-            <a class="icon-before -medium" href="https://medium.com/labhacker" target="_blank" rel="noopener">Medium</a>
+            <a class="icon" href="https://github.com/labhackercd" target="_blank" rel="noopener"><i class="fab fa-github"></i>Github</a>
+            <a class="icon" href="https://medium.com/labhacker" target="_blank" rel="noopener"><i class="fab fa-medium"></i>Medium</a>
           </div>
         </div>
         <div class="item">
           <span class="title">Provocando</span>
           <div class="list">
-            <a class="icon-before -calendar" href="https://calendar.google.com/calendar/r?cid=labhackercd@gmail.com&cid=kmmle9va3fnaa0fchi3eivkebk@group.calendar.google.com&cid=uugftnc1c7vml485eku52fli9mrlrdmf@import.calendar.google.com" target="_blank" rel="noopener">Agenda de atividades</a>
+            <a class="icon" href="https://calendar.google.com/calendar/r?cid=labhackercd@gmail.com&cid=kmmle9va3fnaa0fchi3eivkebk@group.calendar.google.com&cid=uugftnc1c7vml485eku52fli9mrlrdmf@import.calendar.google.com" target="_blank" rel="noopener"><i class="far fa-calendar-alt"></i>Agenda de atividades</a>
           </div>
         </div>
         <div class="item -large">
         <span class="title">Participando</span>
-        <span class="description">Mande sugestões, críticas, ou ideias pra gente desenvolver 😉</span>
+        <span class="description">Mande sugestões, críticas ou ideias pra gente desenvolver 😉</span>
         <a href="mailto:labhacker@camara.leg.br" target="_top">labhacker@camara.leg.br</a>
         </div>
       </main>
     </section>
   </main>
-<script type="text/javascript" src="index.js?f4cbbb26d5137151b4ae"></script></body>
+<script type="text/javascript" src="index.js?5638e7570f647b29c49b"></script></body>
 
 </html>
