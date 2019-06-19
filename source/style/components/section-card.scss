@@ -1,6 +1,6 @@
 .section-card {
   @include container;
-  background-color: $color-lab-green-dark;
+  background-color: $color-lab-green;
   padding-top: 2rem;
 
   > .cards {
@@ -8,13 +8,13 @@
     column-count: 3;
     column-gap: 1.5rem;
 
-    @include media-mediumonly {
+    @media (max-width: 1600px) and (min-width: 641px) {
       column-count: 2;
       column-gap: 1.5rem;
       padding-bottom: 4rem;
     }
 
-    @include media-smallonly {
+    @include media-mediumdown {
       column-count: 1;
       column-gap: 0;
       padding-bottom: 4rem;
@@ -64,8 +64,8 @@
 
         > .name {
           font-size: 1.5rem;
-          color: $color-lab-green-dark;
-          margin-top: 1rem;
+          color: $color-lab-green;
+          margin-top: 1.5rem;
           text-align: center;
           line-height: 1.2;
         }

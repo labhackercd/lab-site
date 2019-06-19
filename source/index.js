@@ -2,44 +2,61 @@ import './style/style.scss';
 
 // modal
 
-var greenButtons = $('.lab-button.-green');
-var blueButtons = $('.lab-button.-blue');
-var orangeButtons = $('.lab-button.-orange');
+var aboutButtons = $('.js-openAbout');
+var linksButtons = $('.js-openLinks');
+var activitiesButtons = $('.js-openActivities');
 var sectionAbout = $('.section-about');
 var sectionLinks = $('.section-links');
 var sectionActivities = $('.section-activities');
 var closeModals = $('.close-modal');
 var body = $('body');
 
-greenButtons.click(function(){
-  history.pushState(undefined, undefined, "quem-somos");
+$(window).on('load', function() {
+
+  if(window.location.href.indexOf('#quem-somos') != -1) {
+    sectionAbout.addClass('-active');
+    body.addClass('-noscroll');
+  }
+
+  if(window.location.href.indexOf('#nos-acompanhe') != -1) {
+    sectionLinks.addClass('-active');
+    body.addClass('-noscroll');
+  }
+
+  if(window.location.href.indexOf('#nossas-atividades') != -1) {
+    sectionActivities.addClass('-active');
+    body.addClass('-noscroll');
+  }
+
+});
+
+aboutButtons.click(function(){
+  history.pushState(undefined, undefined, "#quem-somos");
 
   sectionAbout.addClass('-active');
   body.addClass('-noscroll');
 });
 
-blueButtons.click(function(){
-  history.pushState(undefined, undefined, "nos-acompanhe");
+linksButtons.click(function(){
+  history.pushState(undefined, undefined, "#nos-acompanhe");
   sectionLinks.addClass('-active');
   body.addClass('-noscroll');
 });
 
-orangeButtons.click(function(){
-  history.pushState(undefined, undefined, "nossas-atividades");
+activitiesButtons.click(function(){
+  history.pushState(undefined, undefined, "#nossas-atividades");
   sectionActivities.addClass('-active');
   body.addClass('-noscroll');
 });
 
 function removeModal() {
-  sectionAbout.removeClass('-active');
-  sectionLinks.removeClass('-active');
-  sectionActivities.removeClass('-active');
+  $('.js-page').removeClass('-active')
   body.removeClass('-noscroll');
+  history.replaceState({}, document.title, window.location.href.split('#')[0]);
 }
 
 closeModals.click(function(){
   removeModal();
-  history.back()
 });
 
 window.onpopstate = function(event) {
@@ -49,9 +66,8 @@ window.onpopstate = function(event) {
 // Esc remove modal
 $(document).keyup(function(e) {
    if (e.keyCode == 27) {
-     if (sectionAbout.hasClass('-active') || sectionLinks.hasClass('-active') || sectionActivities.hasClass('-active')) {
+     if ($('.js-page').hasClass('-active')) {
        removeModal();
-       history.back();
      }
   };
 });

@@ -9,7 +9,11 @@
   -webkit-overflow-scrolling: touch;
   padding: 0;
   padding-top: 1rem;
-  background-color: $color-lab-blue-light;
+  background-color: #292B29;
+  background-image: url('../images/bg-links.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 22rem;
   color: #fff;
   transform: translateX(150vw);
   transition: all .5s ease-in-out;
@@ -49,7 +53,7 @@
   > main {
     padding: 4.5rem 8vw;
     box-sizing: border-box;
-    background-color: $color-lab-blue-dark;
+    background-color: $color-lab-pink;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;

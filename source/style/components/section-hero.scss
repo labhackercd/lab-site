@@ -38,8 +38,8 @@
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    margin-left: -2rem;
-    margin-right: -2rem;
+    margin-left: 4px;
+    margin-bottom: 1rem; 
   }
 
   > .content {
@@ -52,7 +52,6 @@
     }
 
     h1 {
-      text-shadow: 0 1rem 3rem rgba(#000, 0.1);
       font-size: 2.8rem;
       line-height: 2.6rem;
       letter-spacing: -0.01em;

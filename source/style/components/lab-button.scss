@@ -1,7 +1,7 @@
 .lab-button {
   color: #fff;
   font-weight: 500;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.15s ease-in-out;
   font-size: $font-size-deci;
   padding: 1rem 2rem;
 
@@ -10,28 +10,20 @@
     padding: 1.25rem 2.5rem;
   }
 
+  &:hover {
+    transform: scale(1.075);
+  }
+
   &.-green {
     background-color: $color-lab-green;
-
-    &:hover {
-      background-color: $color-lab-green-dark;
-    }
   }
 
-  &.-blue {
-    background-color: $color-lab-blue;
-
-    &:hover {
-      background-color: $color-lab-blue-dark;
-    }
+  &.-pink {
+    background-color: $color-lab-pink;
   }
 
-  &.-orange {
-    background-color: $color-lab-orange;
-
-    &:hover {
-      background-color: $color-lab-orange-dark;
-    }
+  &.-yellow {
+    background-color: $color-lab-yellow;
   }
 
   &:active {

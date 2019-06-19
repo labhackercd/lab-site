@@ -20,10 +20,12 @@
       margin: 0;
       opacity: 0;
       transition: all .4s ease-out;
+      pointer-events: none;
 
       &.-active {
         transform: translateY(0);
         opacity: 1;
+        pointer-events: auto;
       }
     }
   }
@@ -46,16 +48,26 @@
       height: 1.25rem;
       background-color: #FFF;
       cursor: pointer;
+      transition: all 0.15s ease-in-out;
+      box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+
+      &:hover {
+        transform: scale(1.2);
+      }
 
       &.-active {
-        background-color: $color-lab-orange;
+        background-color: $color-lab-yellow;
       }
 
       &.-diamond {
         transform: rotate(315deg) translateY(1rem);
 
+        &:hover {
+          transform: rotate(315deg) translateY(1rem) scale(1.2);
+        }
+
         &.-active {
-          background-color: $color-lab-green;
+          background-color: $color-lab-pink;
         }
       }
 
@@ -63,8 +75,12 @@
         border-radius: 50%;
         transform: translate(1rem, -0.5rem);
 
+        &:hover {
+          transform: translate(1rem, -0.5rem) scale(1.2);
+        }
+
         &.-active {
-          background-color: $color-lab-pink;
+          background-color: $color-lab-green;
         }
       }
     }

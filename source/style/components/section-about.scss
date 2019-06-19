@@ -9,7 +9,11 @@
   -webkit-overflow-scrolling: touch;
   padding: 0;
   padding-top: 1rem;
-  background-color: $color-lab-green-light;
+  background-color: #292B29;
+  background-image: url('../images/bg-about.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 22rem;
   color: #fff;
   transform: translateX(-150vw);
   transition: all .5s ease-in-out;
@@ -48,7 +52,7 @@
 
   > main {
     padding: 4.5rem 25vw;
-    background-color: $color-lab-green-dark;
+    background-color: $color-lab-green;
 
     @include media-smallonly {
       padding: 2.5rem 9vw;

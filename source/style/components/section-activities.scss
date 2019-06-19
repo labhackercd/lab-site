@@ -9,7 +9,11 @@
   -webkit-overflow-scrolling: touch;
   padding: 0;
   padding-top: 1rem;
-  background-color: $color-lab-orange-light;
+  background-color: #292B29;
+  background-image: url('../images/bg-activities.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 22rem;
   color: #fff;
   transform: translateY(150vh);
   transition: all .5s ease-in-out;
@@ -49,7 +53,7 @@
   > .section-card {
     padding: 4.5rem 8vw;
     box-sizing: border-box;
-    background-color: $color-lab-orange-dark;
+    background-color: $color-lab-yellow;
 
     > .cards {
       padding-top: 2rem;
@@ -74,7 +78,7 @@
           }
 
           > .name {
-            color: $color-lab-orange-dark;
+            color: $color-lab-yellow;
           }
         }
       }
