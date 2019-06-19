@@ -15,7 +15,7 @@
   background-position: right top;
   background-size: 22rem;
   color: #fff;
-  transform: translateY(150vh);
+  transform: translateX(-150vw); 
   transition: all .5s ease-in-out;
 
   &.-active {

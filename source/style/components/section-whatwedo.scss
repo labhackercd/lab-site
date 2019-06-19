@@ -27,6 +27,18 @@
     }
   }
 
+  > .sectiontext {
+    max-width: 66ch;
+    flex-basis: 100%;
+    margin-top: 4rem;
+  }
+
+  > h3 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: -2.5rem;
+  }
+
   > .thingswedo {
     display: flex;
     flex-direction: column;
@@ -42,9 +54,10 @@
       }
     }
 
-    > h3 {
+    > h4 {
+      font-size: 2rem;
       text-align: center;
-      margin-bottom: $space-deci;
+      margin-bottom: 2.5rem;
     }
 
     > img {

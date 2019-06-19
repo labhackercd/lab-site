@@ -3,7 +3,7 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: #000;
-  height: 80vh;
+  height: calc(100vh - 14rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,19 +13,10 @@
   background-position: center;
   background-repeat: no-repeat;
   color: #FFF;
-  align-items: center;
+  align-items: flex-start;
 
   @include media-smallonly {
     height: 100vh;
-    text-align: center;
-  }
-
-  @include media-mediumdown {
-    text-align: center;
-  }
-
-  @include media-mediumup {
-    align-items: flex-start;
   }
 
   > .logo {
@@ -53,8 +44,12 @@
 
     h1 {
       font-size: 2.8rem;
-      line-height: 2.6rem;
+      line-height: 1.2;
       letter-spacing: -0.01em;
+
+      @include media-mediumdown {
+        font-size: 1.75rem;
+      }
     }
   }
 }

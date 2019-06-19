@@ -39,11 +39,6 @@ body > main {
     margin-top: 0;
     padding-top: $space-hecto;
     padding-bottom: $space-hecto;
-
-    @include media-mediumup {
-      padding-top: $space-kilo;
-      padding-bottom: $space-kilo;
-    }
   }
 }
 
