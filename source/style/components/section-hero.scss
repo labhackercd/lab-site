@@ -19,6 +19,20 @@
     height: 100vh;
   }
 
+  > .language-switch {
+    display: flex;
+    align-self: flex-end;
+    font-weight: bold;
+
+    > .option {
+      padding: 0 0.5rem;
+      &:hover {
+        color: #A1A1A1;
+      }
+    }
+
+  }
+
   > .logo {
     min-height: 272px;
     height: 272px;
@@ -30,7 +44,7 @@
     background-position: center;
     background-repeat: no-repeat;
     margin-left: 4px;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
   }
 
   > .content {
